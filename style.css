@@ -16,7 +16,7 @@
   border: 1px solid blue;
 }
 
-.projects {
+.main-content {
   grid-area: 2 / 2 / 3 / 3;
 
   background-color: #fafaf9;
