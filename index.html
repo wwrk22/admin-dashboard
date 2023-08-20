@@ -8,18 +8,46 @@
 
 <body>
 
-<div class="page">
-  <div class="header">
-    <h1>HEADER HEADER HEADER HEADER HEADER</h1>
+<div class="grid page">
+  <div class="grid header">
+    <div class="grid" id="header-top"><!-- grid -->
+      <div class="grid search-box"><!-- grid -->
+        <h1> * </h1><!-- Magnifying glass icon -->
+        <input type="text">
+      </div><!-- search-box -->
+
+      <div class="grid col-gap-sm user-box"><!-- grid -->
+        <h1> * </h1><!-- Bell icon -->
+        <h1> * </h1><!-- Small logo -->
+        <h2>Foo Bar</h2>
+      </div><!-- user-box -->
+    </div><!-- header-top -->
+
+    <div class="grid"id="header-bottom"><!-- grid -->
+      <div class="grid col-gap-sm greeting-box"><!-- grid -->
+        <h1 class="large-logo"> * </h1>
+
+        <div class="greeting-msg">
+          <p>Hi there,</p>
+          <h1>Foo Bar (@foobar)</h1>
+        </div>
+      </div><!-- greeting-box -->
+
+      <div class="grid col-gap-sm button-box"><!-- grid -->
+        <button>New</button>
+        <button>Upload</button>
+        <button>Share</button>
+      </div><!-- button-box -->
+    </div><!-- header-bottom -->
   </div><!-- header -->
 
-  <div class="sidebar">
-    <div id="sidebar-top">
+  <div class="grid sidebar">
+    <div class="grid" id="sidebar-top">
       <div>*</div>
       <div>Dashboard</div>
     </div>
 
-    <div id="sidebar-mid">
+    <div class="grid" id="sidebar-mid">
       <div>*</div>
       <div>Home</div>
 
@@ -39,7 +67,7 @@
       <div>Communities</div>
     </div>
 
-    <div id="sidebar-bottom">
+    <div class="grid" id="sidebar-bottom">
       <div>*</div>
       <div>Settings</div>
 
@@ -51,12 +79,8 @@
     </div>
   </div><!-- sidebar -->
 
-  <div class="main-content">
-    <h1>PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS</h1>
-    <h1>PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS</h1>
-    <h1>PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS</h1>
-    <h1>PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS</h1>
-    <h1>PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS</h1>
+  <div class="grid main-content">
+    <h1>PROJECTS</h1>
   </div><!-- main-container -->
 </div><!-- page -->
 
