@@ -1,5 +1,6 @@
 body {
   font-family: Rockwell, Arial, Helvetica, sans-serif;
+  color: #41433F;
 
   --double-x-sm-gap: 0.6rem;
   --x-sm-gap: 1.2rem;
@@ -13,6 +14,8 @@ body {
 
   /* colors */
   --lotion: #FBFBFC;
+  --chinese-white: #DEECD8;
+  --light-moss-green: #BADBB2;
 }
 
 .grid {
@@ -47,6 +50,23 @@ body {
 
 .user-box {
   grid-template-columns: min-content min-content max-content; 
+  column-gap: var(--x-sm-gap);
+  align-items: center;
+}
+
+.header-icon {
+  height: var(--sidebar-icon-height);
+}
+
+.header-logo {
+  color: var(--light-moss-green);
+  height: 3.6rem;
+}
+
+.username-sm {
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding-top: 0.2rem;
 }
 
 .greeting-box {
