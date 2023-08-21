@@ -1,11 +1,18 @@
 body {
   font-family: Rockwell, Arial, Helvetica, sans-serif;
 
+  --double-x-sm-gap: 0.6rem;
   --x-sm-gap: 1.2rem;
   --sm-gap: 2rem;
 
   --sm-heading-font-size: 1.8rem;
   --text-font-size: 1.4rem;
+
+  --sidebar-logo-height: calc(var(--sm-heading-font-size) + 1rem);
+  --sidebar-icon-height: calc(var(--text-font-size) + 0.6rem);
+
+  /* colors */
+  --lotion: #FBFBFC;
 }
 
 .grid {
@@ -60,22 +67,36 @@ body {
   grid-row-gap: 3rem;
   grid-auto-rows: min-content;
 
-  color: #FBFBFC;
+  color: var(--lotion);
 }
 
-/* Sidebar top, mid, and bottom groups */
-.sidebar > div {
-  grid-template-columns: min-content auto;
-  grid-column-gap: var(--x-sm-gap);
+.sidebar > div { /* Sidebar top, mid, and bottom groups */
+  grid-template-columns: 1fr 4fr;
   grid-row-gap: var(--x-sm-gap);
 }
 
 #sidebar-top {
   font-size: var(--sm-heading-font-size);
+  align-items: center;
+}
+
+
+.sidebar-logo {
+  justify-self: center;
+  height: var(--sidebar-logo-height);
+}
+
+.sidebar-item {
+  align-self: end;
 }
 
 #sidebar-mid, #sidebar-bottom {
   font-size: var(--text-font-size);
+}
+
+.sidebar-icon {
+  justify-self: center;
+  height: var(--sidebar-icon-height);
 }
 
 /* -- MAIN CONTENT -- */
