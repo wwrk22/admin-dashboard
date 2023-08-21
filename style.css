@@ -154,6 +154,8 @@ body {
 .project-card {
   background-color: #FBFBFC;
   padding: 0 1.8rem 0 1.8rem;
+
+  grid-template-rows: 1fr 2.4fr 1fr;
 }
 
 .project-card-tools {
@@ -174,6 +176,10 @@ body {
 .trending {
   padding: 1.2rem;
   padding-top: 0;
+}
+
+.announcement-body {
+  font-size: 0.8rem;
 }
 
 .trending > div {
