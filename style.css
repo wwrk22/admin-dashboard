@@ -62,8 +62,12 @@ body {
   height: var(--sidebar-icon-height);
 }
 
-.header-logo {
+.header-logo,
+.header-logo-lg {
   color: var(--light-moss-green);
+}
+
+.header-logo {
   height: 3.6rem;
 }
 
@@ -75,6 +79,10 @@ body {
 
 .greeting-box {
   grid-template-columns: min-content minmax(auto, 75%);
+}
+
+.header-logo-lg {
+  height: 7rem;
 }
 
 .button-box {
