@@ -13,8 +13,8 @@ Static admin dashboard page made with grid layouts
 ### Header
 [x] Header skeleton with all of its inner grids with placeholder items
 [] Search bar
-[] User box with bell, logo, and user name
-[] Large logo next to greeting message
+[x] User box with bell, logo, and user name
+[x] Large logo next to greeting message
 [] Project tool buttons
 
 ### Main Container
