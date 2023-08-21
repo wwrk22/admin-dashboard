@@ -48,6 +48,10 @@ body {
   align-items: center;
 }
 
+.magnify {
+  height: 1.8rem;
+}
+
 .user-box {
   grid-template-columns: min-content min-content max-content; 
   column-gap: var(--x-sm-gap);
@@ -84,7 +88,7 @@ body {
   background-color: #79AD75;
   padding: var(--sm-gap);
 
-  grid-row-gap: 3rem;
+  grid-row-gap: 5rem;
   grid-auto-rows: min-content;
 
   color: var(--lotion);
