@@ -180,3 +180,7 @@ body {
   grid-template-columns: min-content max-content;
   grid-column-gap: 1rem;
 }
+
+.trending img {
+  height: 4rem;
+}
