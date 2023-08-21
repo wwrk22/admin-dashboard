@@ -1,5 +1,11 @@
 body {
   font-family: Rockwell, Arial, Helvetica, sans-serif;
+
+  --x-sm-gap: 1.2rem;
+  --sm-gap: 2rem;
+
+  --sm-heading-font-size: 1.8rem;
+  --text-font-size: 1.4rem;
 }
 
 .grid {
@@ -7,7 +13,7 @@ body {
 }
 
 .col-gap-sm {
-  grid-column-gap: 2rem;
+  grid-column-gap: var(--sm-gap);
 }
 
 .page {
@@ -22,7 +28,7 @@ body {
 
 .header > div {
   grid-template-columns: 0.65fr 0.35fr;
-  grid-column-gap: 10rem;
+  grid-column-gap: 8rem;
   padding: 0 2.4rem 0 2.4rem;
 }
 
@@ -49,7 +55,7 @@ body {
 .sidebar {
   grid-row: 1 / span 2;
   background-color: #79AD75;
-  padding: 2rem 2rem;
+  padding: var(--sm-gap);
 
   grid-row-gap: 3rem;
   grid-auto-rows: min-content;
@@ -60,41 +66,60 @@ body {
 /* Sidebar top, mid, and bottom groups */
 .sidebar > div {
   grid-template-columns: min-content auto;
-  grid-column-gap: 1.2rem;
-  grid-row-gap: 1.2rem;
+  grid-column-gap: var(--x-sm-gap);
+  grid-row-gap: var(--x-sm-gap);
 }
 
 #sidebar-top {
-  font-size: 1.8rem;
+  font-size: var(--sm-heading-font-size);
 }
 
 #sidebar-mid, #sidebar-bottom {
-  font-size: 1.4rem;
+  font-size: var(--text-font-size);
 }
 
 /* -- MAIN CONTENT -- */
 .main-content {
   grid-column: 2 / 3;
   background-color: #EFF1ED;
+  padding: 1.2rem;
 
-  grid-template: 1fr 1fr / 3fr 1fr;
+  grid-template-columns: 3fr 1fr;
+  column-gap: 1.4rem;
 }
 
 .your-projects {
   grid-area: 1 / 1 / 3 / 2;
-
-  grid-template: 1fr repeat(3, 5fr) / 1fr 1fr;
-  grid-gap: 2rem;
 }
 
-.your-projects > div:first-child {
-  grid-area: 1 / 1 / 2 / 3;
+.project-cards {
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-auto-rows: 1fr;
+  gap: 1.4rem;
+}
+
+.project-card {
+  background-color: #FBFBFC;
+  padding: 0 1.8rem 0 1.8rem;
 }
 
 .project-card-tools {
   grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 1.6rem;
+  justify-self: end;
 }
 
+.meta-content {
+  grid-column: 2 / 3;
+}
+
+.announcements,
 .trending {
-  grid-area: 2 / 2 / 3 / 3;
+  padding: 1.2rem;
+  padding-top: 0;
+}
+
+.trending > div {
+  grid-template-columns: min-content max-content;
+  grid-column-gap: 1rem;
 }

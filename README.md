@@ -20,5 +20,3 @@ Static admin dashboard page made with grid layouts
 ### Main Container
 [x] Contains three cells in a 2x2 grid where the first column is three times the size of the second and the two rows are of equal size
 [x] Projects cell is a 3x2 grid
-[] Announcements cell is a 3x1 grid
-[] Trending cell is a 4x1 grid
