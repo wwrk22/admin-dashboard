@@ -162,6 +162,10 @@ body {
   justify-self: end;
 }
 
+.project-card-tools svg {
+  height: 1.8rem;
+}
+
 .meta-content {
   grid-column: 2 / 3;
 }
