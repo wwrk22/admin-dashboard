@@ -16,6 +16,7 @@ body {
   --lotion: #FBFBFC;
   --chinese-white: #DEECD8;
   --light-moss-green: #BADBB2;
+  --fuzzy-wuzzy: #D56671;
 }
 
 .grid {
@@ -104,7 +105,7 @@ body {
 
 .sidebar > div { /* Sidebar top, mid, and bottom groups */
   grid-template-columns: 1fr 4fr;
-  grid-row-gap: var(--x-sm-gap);
+  grid-gap: var(--x-sm-gap);
 }
 
 #sidebar-top {
@@ -138,7 +139,7 @@ body {
   padding: 1.2rem;
 
   grid-template-columns: 3fr 1fr;
-  column-gap: 1.4rem;
+  gap: 1.4rem;
 }
 
 .your-projects {
@@ -152,10 +153,11 @@ body {
 }
 
 .project-card {
-  background-color: #FBFBFC;
+  background: linear-gradient(90deg, var(--fuzzy-wuzzy) 0% 2.4%, var(--lotion) 2.4% 100%);
   padding: 0 1.8rem 0 1.8rem;
+  border-radius: 1rem;
 
-  grid-template-rows: 1fr 2.4fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
 }
 
 .project-card-tools {
@@ -168,25 +170,44 @@ body {
   height: 1.8rem;
 }
 
-.meta-content {
-  grid-column: 2 / 3;
+.announcements-box {
+  grid-row: 1 / 2;
+}
+
+.trending-box {
+  grid-row: 2 / 3;
 }
 
 .announcements,
 .trending {
+  background-color: var(--lotion);
   padding: 1.2rem;
-  padding-top: 0;
+  border-radius: 1rem;
+}
+
+.announcements > div:not(:last-child) {
+  border-bottom: 1px solid #A9AAA7;
+  padding-bottom: 1rem;
 }
 
 .announcement-body {
   font-size: 0.8rem;
 }
 
-.trending > div {
+.trending-peeps {
+  display: grid;
+  grid-row-gap: 1.2rem;
+}
+
+.trending-peeps > div {
   grid-template-columns: min-content max-content;
   grid-column-gap: 1rem;
 }
 
 .trending img {
-  height: 4rem;
+  height: 3.2rem;
+}
+
+.trend-setter > div {
+  align-self: end;
 }
